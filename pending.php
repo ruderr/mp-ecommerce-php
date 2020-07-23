@@ -130,7 +130,8 @@
                                         <h4>
                                             Número de orden: <b><?php echo $_GET['merchant_order_id'] ?></b>
                                         </h4>
-collection_id=7716292325&
+<!--
+    collection_id=7716292325&
 collection_status=pending&
 external_reference=ruderr@yahoo.com&
 payment_type=ticket&
@@ -138,7 +139,8 @@ merchant_order_id=1615930651&
 preference_id=469485398-92dba425-9e8c-487e-9240-6be7af9112f8&
 site_id=MLA&
 processing_mode=aggregator&
-merchant_account_id=null                                                                                
+merchant_account_id=null
+/-->                                                                                
                                     </div>
                                 </div>
                             </div>

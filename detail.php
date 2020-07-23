@@ -37,13 +37,13 @@ $preference->payment_methods = array(
 
 //Preferencias de retorno
 $preference->back_urls = array(
-    "success" => "http://mp-ecommerce-php/success.php",
-    "failure" => "http://mp-ecommerce-php/failure.php",
-    "pending" => "http://mp-ecommerce-php/pending.php"
+    "success" => "https://ruderr-mp-ecommerce-php.herokuapp.com/success.php",
+    "failure" => "https://ruderr-mp-ecommerce-php.herokuapp.com/failure.php",
+    "pending" => "https://ruderr-mp-ecommerce-php.herokuapp.com/pending.php"
 );
 $preference->auto_return = "approved";
 
-$preference->notification_url = "http://mp-ecommerce-php/mp-notificaciones.php";
+$preference->notification_url = "https://ruderr-mp-ecommerce-php.herokuapp.com/mp-notificaciones.php";
 
 $preference->save();
 

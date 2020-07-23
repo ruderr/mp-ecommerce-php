@@ -130,6 +130,7 @@
                                         <h4>
                                             Número de orden: <b><?php echo $_GET['merchant_order_id'] ?></b>
                                         </h4>
+ <!--
  collection_id=7716302055&
  collection_status=rejected&
  external_reference=ruderr@yahoo.com&
@@ -138,7 +139,8 @@
  preference_id=469485398-5d78d2c7-990b-4ffa-ae15-8cf518d7fb30&
  site_id=MLA&
  processing_mode=aggregator&
- merchant_account_id=null                                        
+ merchant_account_id=null
+ /-->                                        
                                     </div>
                                 </div>
                             </div>
