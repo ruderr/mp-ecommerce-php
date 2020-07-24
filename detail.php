@@ -43,7 +43,8 @@ $preference->back_urls = array(
 );
 $preference->auto_return = "approved";
 
-$preference->notification_url = "https://ruderr-mp-ecommerce-php.herokuapp.com/mp-notificaciones.php";
+//$preference->notification_url = "https://ruderr-mp-ecommerce-php.herokuapp.com/mp-notificaciones.php";
+$preference->notification_url = "https://rudersolutions.com/mp-notificaciones.php";
 
 $preference->save();
 
