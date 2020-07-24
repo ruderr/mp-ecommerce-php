@@ -130,6 +130,9 @@
                                         <h4>
                                             Número de orden: <b><?php echo $_GET['merchant_order_id'] ?></b>
                                         </h4>
+                                        <h4>
+                                            Preference id: <b><?php echo $_GET['preference_id'] ?></b>
+                                        </h4>  
  <!--
  collection_id=7716302055&
  collection_status=rejected&
