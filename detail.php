@@ -22,6 +22,23 @@ $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $preference->items = array($item);
 
+//Datos del pagador
+$payer = new MercadoPago\Payer();
+$payer->name = "Lalo";
+$payer->surname = "Landa";
+$payer->email = "test_user_63274575@testuser.com";
+$payer->date_created = "2018-06-02T12:58:41.425-04:00";
+$payer->phone = array(
+  "area_code" => "11",
+  "number" => ": 22223333"
+);
+
+$payer->address = array(
+  "street_name" => "False",
+  "street_number" => 123,
+  "zip_code" => "1111"
+);
+
 // Métodos de pago
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
@@ -40,6 +57,10 @@ $preference->back_urls = array(
     "success" => "https://ruderr-mp-ecommerce-php.herokuapp.com/success.php",
     "failure" => "https://ruderr-mp-ecommerce-php.herokuapp.com/failure.php",
     "pending" => "https://ruderr-mp-ecommerce-php.herokuapp.com/pending.php"
+
+    //"success" => "http://mp-ecommerce-php/success.php",
+    //"failure" => "http://mp-ecommerce-php/failure.php",
+    //"pending" => "http://mp-ecommerce-php/pending.php"
 );
 $preference->auto_return = "approved";
 
@@ -47,24 +68,6 @@ $preference->auto_return = "approved";
 $preference->notification_url = "https://rudersolutions.com/mp-notificaciones.php";
 
 $preference->save();
-
-//Datos del pagador
-$payer = new MercadoPago\Payer();
-$payer->name = "Lalo";
-$payer->surname = "Landa";
-$payer->email = "test_user_63274575@testuser.com";
-$payer->date_created = "2018-06-02T12:58:41.425-04:00";
-$payer->phone = array(
-  "area_code" => "11",
-  "number" => ": 22223333"
-);
-
-$payer->address = array(
-  "street_name" => "False",
-  "street_number" => 123,
-  "zip_code" => "1111"
-);
-
 ?>
 
 <!DOCTYPE html>
