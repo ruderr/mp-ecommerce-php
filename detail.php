@@ -41,6 +41,7 @@ $payer->address = array(
   "street_number" => 123,
   "zip_code" => "1111"
 );
+$payer->save();
 
 // Métodos de pago
 $preference->payment_methods = array(
@@ -53,7 +54,7 @@ $preference->payment_methods = array(
     "installments" => 6
   );
 
-  $preference->external_reference = "ruderr@yahoo.com";
+$preference->external_reference = "ruderr@yahoo.com";
 
 //Preferencias de retorno
 $preference->back_urls = array(
