@@ -24,8 +24,10 @@ $preference->items = array($item);
 
 //Datos del pagador
 $payer = new MercadoPago\Payer();
-$payer->name = "Lalo";
-$payer->surname = "Landa";
+$payer->type = "registered";
+$payer->id = "471923173";
+$payer->first_name = "Lalo";
+$payer->last_name = "Landa";
 $payer->email = "test_user_63274575@testuser.com";
 //$payer->date_created = "2018-06-02T12:58:41.425-04:00";
 $payer->phone = array(
@@ -41,7 +43,6 @@ $payer->address = array(
   "street_number" => 123,
   "zip_code" => "1111"
 );
-$payer->save();
 
 // Métodos de pago
 $preference->payment_methods = array(
@@ -207,13 +208,14 @@ $preference->save();
                                         </h3>
                                     </div>
                                     <!-- button type="submit" class="mercadopago-button" formmethod="post">Pagar</button /-->
-                                    <form action="<?php echo $preference->init_point?>" method="POST">
+                                    <!-- form action="<?php //echo $preference->init_point?>" method="POST" /-->
                                         <!--script
                                         src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                                         data-preference-id="<?php //echo $preference->id; ?>">
                                         </script /-->
-                                        <input type="submit" class="mercadopago-button" value="Pagar la compra">
-                                    </form>
+                                        <!--input type="submit" class="mercadopago-button" value="Pagar la compra">
+                                    </form /-->
+                                    <?php echo "<a href='$preference->init_point'> Pagar la compra</a>";?>
                                 </div>
                             </div>
                         </div>
