@@ -24,8 +24,8 @@ $preference->items = array($item);
 
 //Datos del pagador
 $payer = new MercadoPago\Payer();
-$payer->type = "registered";
-$payer->id = "471923173";
+$payer->type = "guest";
+//$payer->id = "471923173";
 $payer->first_name = "Lalo";
 $payer->last_name = "Landa";
 $payer->email = "test_user_63274575@testuser.com";
